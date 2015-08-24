@@ -12,6 +12,10 @@ namespace Web.Data
         {
             return GetJsonData().FirstOrDefault(s => s.SiteName == location);
         }
+        public List<LayoutModel> GetAllSites()
+        {
+            return GetJsonData();
+        }
 
         private List<LayoutModel> GetJsonData()
         {
@@ -24,5 +28,7 @@ namespace Web.Data
 
             return sites;
         }
+
+
     }
 }

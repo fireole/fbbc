@@ -24,13 +24,25 @@
                 @Html.ActionLink("FBBC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/@myModel.SiteName">HOME</a></li>
-                    <li><a href="/@myModel.SiteName/join-now">JOIN NOW</a></li>
-                    <li><a href="/@myModel.SiteName/success-stories">SUCCESS STORIES</a></li>
-                    <li><a href="/@myModel.SiteName/schedule">SCHEDUE</a></li>
-                    <li><a href="/@myModel.SiteName/about-us">ABOUT US</a></li>
-                </ul>
+
+                @if (myModel.SiteName != "")
+                {
+                    <ul class="nav navbar-nav">
+                        <li><a href="/@myModel.SiteName">HOME</a></li>
+                        <li><a href="/@myModel.SiteName/join-now">JOIN NOW</a></li>
+                        <li><a href="/@myModel.SiteName/success-stories">SUCCESS STORIES</a></li>
+                        <li><a href="/@myModel.SiteName/schedule">SCHEDUE</a></li>
+                        <li><a href="/@myModel.SiteName/about-us">ABOUT US</a></li>
+                    </ul>
+                }
+                else
+                {
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/">LOCATIONS</a></li>
+                    </ul>
+                }
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
