@@ -2,6 +2,17 @@
   {
     "FirstName": "Antonio",
     "Lastname": "Olander",
+    "SiteName": "",
+    "TitleName": "Chandler Fit Body Boot Camp",
+    "SiteAddress": "950 E Pecos Rd, Chandler AZ 85225",
+    "Phone": "480-725-9073",
+    "SocialFacebook": "fitbodychandler",
+    "SocialGoogle": "",
+    "SocialTwitter": "fitbodychandler"
+  },  
+  {
+    "FirstName": "Antonio",
+    "Lastname": "Olander",
     "SiteName": "chandlerfitnessbootcamp",
     "TitleName": "Chandler Fit Body Boot Camp",
     "SiteAddress": "950 E Pecos Rd, Chandler AZ 85225",
@@ -15,6 +26,17 @@
     "Lastname": "The Beast",
     "SiteName": "ontariofitnessbootcamp",
     "TitleName": "Ontario Fit Body Boot Camp",
+    "SiteAddress": "2409 S. Vineyard Ave Unit J Ontario, CA 91761",
+    "Phone": "(909) 436-7402",
+    "SocialFacebook": "ontariofbbc",
+    "SocialGoogle": "",
+    "SocialTwitter": "ontariofbbc"
+  },
+  {
+    "FirstName": "Bedros",
+    "Lastname": "The Beast",
+    "SiteName": "site10",
+    "TitleName": "Site 10 Fit Body Boot Camp",
     "SiteAddress": "2409 S. Vineyard Ave Unit J Ontario, CA 91761",
     "Phone": "(909) 436-7402",
     "SocialFacebook": "ontariofbbc",
