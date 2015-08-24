@@ -1,7 +1,22 @@
-﻿
+﻿@using Web.Models
 @{
-    ViewBag.Title = "Success";
+    LayoutModel myModel = ViewBag.LayoutModel;
+    ViewBag.Title = "Success Stories";
 }
 
-<h2>Success Stories</h2>
+
+<div class="container">
+
+    <h1 class="text-center">Success Stories</h1>
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <p class="text-center">@myModel.TitleName is more than just a gym. We're not here to sell you a membership, access to training equipment, or even personal training. We're simply here to help you achieve real, permanent fitness and weight loss results. We exist to get you results— in fact, we guarantee you'll get results with our 100% money back guarantee. We promise that the Fit Body Boot Camp Afterburn Training will get you the body you want with a tighter waist, toned arms, and leaner legs.</p>
+
+            <p>Below you'll find people— real people with real stories about their lives, bodies and journeys. Read their stories, listen to their voices, and find out what you can expect from Fit Body Boot Camp.</p>
+        </div>
+    </div>
+
+</div>
 

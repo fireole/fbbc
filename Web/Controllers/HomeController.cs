@@ -43,6 +43,14 @@ namespace Web.Controllers
             return View();
         }
 
+        [Route("{location}/schedule")]
+        public ActionResult Schedule()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
 
         [Route("{location}/success-stories")]
         public ActionResult Success()

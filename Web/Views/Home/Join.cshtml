@@ -1,7 +1,25 @@
-﻿
+﻿@using Web.Models
 @{
-    ViewBag.Title = "Join";
+    LayoutModel myModel = ViewBag.LayoutModel;
+    ViewBag.Title = "Jon";
 }
 
-<h2>Join</h2>
+
+<div class="container">
+    <h2>Try Our Fit Body Boot Camp Afterburn Workout Free for 3 Days!</h2>
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            Location Name: @myModel.TitleName<br />
+            First Name: @myModel.FirstName<br />
+            Last Name: @myModel.LastName<br />
+            Phone: @myModel.Phone<br />
+            Address: @myModel.SiteAddress<br />
+        </div>
+    </div>
+
+
+   
+</div>
 

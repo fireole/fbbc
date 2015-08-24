@@ -8,7 +8,10 @@
     "Phone": "480-725-9073",
     "SocialFacebook": "fitbodychandler",
     "SocialGoogle": "",
-    "SocialTwitter": "fitbodychandler"
+    "SocialTwitter": "fitbodychandler",
+    "City": "Chandler",
+    "Email": "info@fitbodychandler.com",
+    "ZenPlannerName":  "fitbodychandler"
   },  
   {
     "FirstName": "Antonio",
@@ -19,7 +22,10 @@
     "Phone": "480-725-9073",
     "SocialFacebook": "fitbodychandler",
     "SocialGoogle": "",
-    "SocialTwitter": "fitbodychandler"
+    "SocialTwitter": "fitbodychandler",
+    "City": "Chandler",
+    "Email": "info@fitbodychandler.com",
+    "ZenPlannerName":  "fitbodychandler"
   },
   {
     "FirstName": "Bedros",
@@ -30,7 +36,10 @@
     "Phone": "(909) 436-7402",
     "SocialFacebook": "ontariofbbc",
     "SocialGoogle": "",
-    "SocialTwitter": "ontariofbbc"
+    "SocialTwitter": "ontariofbbc",
+    "City": "Ontario",
+    "Email":  "info@fitbodychandler.com",
+    "ZenPlannerName":  ""
   },
   {
     "FirstName": "Bedros",
@@ -41,6 +50,9 @@
     "Phone": "(909) 436-7402",
     "SocialFacebook": "ontariofbbc",
     "SocialGoogle": "",
-    "SocialTwitter": "ontariofbbc"
+    "SocialTwitter": "ontariofbbc",
+    "City": "Site 10",
+    "Email":  "info@fitbodychandler.com",
+    "ZenPlannerName":  "fitbodychandler"
   }
 ]

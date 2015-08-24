@@ -1,49 +1,28 @@
-﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Web.Models;
 
 namespace Web.Data
 {
     public class DataProvider
     {
-        public LayoutModel GetSiteDate(string location)
+        public LayoutModel GetSiteData(string location)
         {
+            return GetJsonData().FirstOrDefault(s => s.SiteName == location);
+        }
 
-            var data = new LayoutModel();
+        private List<LayoutModel> GetJsonData()
+        {
+            var sites = new List<LayoutModel>();
 
-            if (location == "chandlerfitnessbootcamp")
+            using (var sr = new StreamReader(System.Web.HttpContext.Current.Server.MapPath("~/App_Data/sites.json")))
             {
-                data.FirstName = "Antonio";
-                data.LastName = "Olander";
-                data.SiteName = "chandlerfitnessbootcamp";
-                data.TitleName = "Chandler Fit Body Boot Camp";
-                data.SiteAddress = "950 E Pecos Rd, Chandler AZ 85225";
-                data.Phone = "480-725-9073";
-                data.SocialFacebook = "fitbodychandler";
-                data.SocialGoogle = "";
-                data.SocialTwitter = "fitbodychandler";
-            } else if (location == "ontariofitnessbootcamp")
-            {
-                data.FirstName = "Bedros";
-                data.LastName = "The Beast";
-                data.SiteName = "ontariofitnessbootcamp";
-                data.TitleName = "Ontario Fit Body Boot Camp";
-                data.SiteAddress = "2409 S. Vineyard Ave Unit J Ontario, CA 91761";
-                data.Phone = "(909) 436-7402";
-                data.SocialFacebook = "fitbodychandler";
-                data.SocialGoogle = "";
-                data.SocialTwitter = "ontariofbbc";
+                sites = JsonConvert.DeserializeObject<List<LayoutModel>>(sr.ReadToEnd());
             }
 
-
-
-
-            return data;
-
+            return sites;
         }
     }
 }
