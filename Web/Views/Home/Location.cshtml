@@ -1,0 +1,21 @@
+﻿@using Web.Models
+@{
+    LayoutModel myModel = ViewBag.LayoutModel;
+    ViewBag.Title = "Location";
+}
+
+<h2>Home</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            
+            Location Name: @myModel.TitleName<br/>
+            First Name: @myModel.FirstName<br />
+            Last Name: @myModel.LastName<br />
+            Phone: @myModel.Phone<br />
+            Address: @myModel.SiteAddress<br />
+        </div>
+    </div>
+</div>
+
